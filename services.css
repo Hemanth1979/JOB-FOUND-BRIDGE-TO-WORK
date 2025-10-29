@@ -1,0 +1,171 @@
+/* === Global Styles === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #0d6efd, #6610f2);
+  color: #fff;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Navbar === */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffe082 !important;
+}
+
+/* === Services Section === */
+.services {
+  position: relative;
+  padding: 100px 0;
+  background-image: url('https://images.unsplash.com/photo-1581091012184-5c8a1d47f5b3?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.services .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* === Heading Styles === */
+h2 {
+  font-size: 42px;
+  font-weight: 700;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.lead {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* === Service Cards === */
+.service-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 30px 20px;
+  color: #fff;
+  backdrop-filter: blur(8px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  cursor: pointer;
+  min-height: 280px;
+
+  /* For fade-in animation */
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.service-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-card i {
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.service-card h4 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.service-card p {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.service-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.service-card:hover i {
+  transform: scale(1.2);
+}
+
+/* === Scroll Animation (fade-in) === */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Responsive Design === */
+@media (max-width: 992px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  .lead {
+    font-size: 16px;
+  }
+
+  .service-card {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .service-card {
+    padding: 20px 15px;
+  }
+}
+
+/* === Scrollbar Style === */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #007bff, #6610f2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}

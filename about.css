@@ -1,0 +1,63 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* Banner Section */
+.about-banner {
+  position: relative;
+  background: url('about.jpg') center/cover no-repeat;
+  height: 60vh;
+  color: white;
+  overflow: hidden;
+}
+
+.about-banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.about-banner .content {
+  position: relative;
+  z-index: 2;
+}
+
+.about-banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.about-banner p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* About Content Section */
+.about-content h2 {
+  color: #007bff;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-content img {
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+.footer {
+  background-color: #007bff;
+  color: white;
+  font-size: 0.95rem;
+}

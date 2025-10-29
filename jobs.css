@@ -1,0 +1,44 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  min-height: 100vh;
+}
+
+.job-listings h2 {
+  color: #212529;
+  font-weight: 700;
+}
+
+.job-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.job-card h5 {
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+.job-card p {
+  color: #555;
+}
+
+.btn-apply {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-apply:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.05);
+}
